@@ -1,0 +1,36 @@
+    @font-face {
+        font-family: Poppins-SemiBold;
+        src: url(../fonts/Poppins-SemiBold.ttf);
+    }
+
+    @font-face {
+        font-family: Archivo-Bold;
+        src: url(../fonts/Archivo-Bold.ttf);
+    }
+
+    @font-face {
+        font-family: Nunito-Regular;
+        src: url(../fonts/Nunito-Regular.ttf)
+    }
+
+    @font-face {
+        font-family: Montserrat-Regular;
+        src: url(../fonts/Montserrat-Regular.ttf)
+    }
+
+    @font-face {
+        font-family: Montserrat-Bold;
+        src: url(../fonts/Montserrat-Bold.ttf);
+    }
+
+    * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+
+    .uniPadding {
+        padding: 0px 5%;
+    }
+
+    
