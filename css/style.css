@@ -1,82 +1,82 @@
-    @font-face {
-        font-family: Poppins-SemiBold;
-        src: url(../fonts/Poppins-SemiBold.ttf);
-    }
+@font-face {
+    font-family: Archivo-Bold;
+    src: url(../fonts/Archivo-Bold.ttf);
+}
 
-    @font-face {
-        font-family: Archivo-Bold;
-        src: url(../fonts/Archivo-Bold.ttf);
-    }
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 
-    @font-face {
-        font-family: Nunito-Regular;
-        src: url(../fonts/Nunito-Regular.ttf)
-    }
+body {
+    background: linear-gradient(to right, black, grey, black);
+}
 
-    @font-face {
-        font-family: Montserrat-Regular;
-        src: url(../fonts/Montserrat-Regular.ttf)
-    }
+#container {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
 
-    @font-face {
-        font-family: Montserrat-Bold;
-        src: url(../fonts/Montserrat-Bold.ttf);
-    }
+#brandTitle {
+    padding: 50px;
+}
 
-    *, *::before, ::after {
-        margin: 0px;
-        padding: 0px;
-        box-sizing: border-box;
-       
-    }
-    body{
-        background: linear-gradient(to left, black, #00ff6c, black);
-    }
-    #calculatorGrid{
-        display: grid;
-        grid-template-columns: repeat(4, 100px);
-        grid-template-rows: minmax(120px, auto) repeat(5, 100px);
-        height: 100vh;
-        justify-content: center;
-        align-content: center;
-    }
-    #output{
-        grid-column: 1/-1;
-        background-color: rgba(0, 0, 0, .75);
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-        justify-content: space-around;
-        padding: 10px;
-        word-wrap: break-word;
-        word-break: break-all;
-    }
-    #previousOperand{
-        color: rgba(255, 255, 255, .75);
-        font-size: 1.5rem;
-    }
-    #currentOperand{
-        color: white;
-        font-size: 2.5rem;
-    }
-    #clearBtn{
-        grid-column: 1/3;
-    }
-    #equalBtn{
-        grid-column: 3/5;
-    }
-    button{
-        border-radius: 5px;
-        cursor: pointer; 
-        font-size: 2rem;
-        border: 1px solid white;
-        outline: none;
-        background-color: rgba(255, 255, 255, .75);
-    }
-    button:hover{
-        background-color: rgba(255, 255, 255, .9);
-    }
-    
+#calculatorGrid {
+    display: grid;
+    font-weight: normal;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: minmax(120px, auto) repeat(5, 100px);
+    justify-content: center;
+    align-content: center;
+    height: 100vh;
+}
 
-   
-    
+#output {
+    grid-column: 1/-1;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    justify-content: center;
+    justify-content: space-around;
+    align-items: flex-end;
+    background-color: rgba(0, 0, 0, .75);
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+#allClear {
+    grid-column: 1/3;
+}
+
+#equal {
+    grid-column: 3/5;
+}
+
+#previousOperand {
+    color: rgba(255, 255, 255, .75);
+    font-size: 1.5rem;
+}
+
+#currentOperand {
+    color: white;
+    font-size: 2.5rem;
+}
+
+#calculatorGrid>button {
+    background-color: rgba(255, 255, 255, .75);
+    border-radius: 5px;
+    border: 1px solid white;
+    outline: none;
+    font-size: larger;
+    font-family: Archivo-Bold;
+}
+
+#calculatorGrid>button:hover {
+    background-color: rgba(255, 255, 255, .9);
+}
