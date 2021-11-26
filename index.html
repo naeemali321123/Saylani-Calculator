@@ -9,107 +9,40 @@
     <link rel="stylesheet" href="/css/style.css">
     <!-- font awesome -->
     <script src="https://kit.fontawesome.com/b63fe1f5ce.js" crossorigin="anonymous"></script>
-    <title>Assignment-04</title>
+    <title>Saylani-Calculator</title>
 </head>
 
 <body>
     <div id="container">
-        <div id="calculatorSection">
-            <div id="button">
-                <div id="result">
-                    <form action="">
-                        <input type="text" placeholder="Result">
-                    </form>
-                </div>
-                <div id="clearBtn">
-                    <p>
-                        <a href=""> C</a>
-                    </p>
-                </div>
-                <div id="1">
-                    <p>
-                        <a href=""> 1</a>
-                    </p>
-                </div>
-                <div id="2">
-                    <p>
-                        <a href=""> 2</a>
-                    </p>
-                </div>
-                <div id="3">
-                    <p>
-                        <a href=""> 3</a>
-                    </p>
-                </div>
-                <div id="plus">
-                    <p>
-                        <a href=""> +</a>
-                    </p>
-                </div>
-                <div id="4">
-                    <p>
-                        <a href=""> 4</a>
-                    </p>
-                </div>
-                <div id="5">
-                    <p>
-                        <a href=""> 5</a>
-                    </p>
-                </div>
-                <div id="6">
-                    <p>
-                        <a href=""> 6</a>
-                    </p>
-                </div>
-                <div id="minus">
-                    <p>
-                        <a href=""> -</a>
-                    </p>
-                </div>
-                <div id="7">
-                    <p>
-                        <a href=""> 7</a>
-                    </p>
-                </div>
-                <div id="8">
-                    <p>
-                        <a href=""> 8</a>
-                    </p>
-                </div>
-                <div id="9">
-                    <p>
-                        <a href=""> 9</a>
-                    </p>
-                </div>
-                <div id="multiply">
-                    <p>
-                        <a href=""> *</a>
-                    </p>
-                </div>
-                <div id="devide">
-                    <p>
-                        <a href=""> /</a>
-                    </p>
-                </div>
-                <div id="0">
-                    <p>
-                        <a href=""> 0</a>
-                    </p>
-                </div>
-                <div id="point">
-                    <p>
-                        <a href=""> .</a>
-                    </p>
-                </div>
-                <div id="equal">
-                    <p>
-                        <a href=""> =</a>
-                    </p>
-                </div>
+        <div id="calculatorGrid">
+            <div id="output">
+                <div data-previousOperand id="previousOperand">456</div>
+                <div data-currentOperand id="currentOperand">123</div>
             </div>
+            <button data-allClear id="clearBtn">AC</button>
+            <button data-delete>DEL</button>
+            <button data-operation>÷</button>
+            <button data-number>1</button>
+            <button data-number>2</button>
+            <button data-number>3</button>
+            <button data-operation>*</button>
+            <button data-number>4</button>
+            <button data-number>5</button>
+            <button data-number>6</button>
+            <button data-operation>+</button>
+            <button data-number>7</button>
+            <button data-number>8</button>
+            <button data-number>9</button>
+            <button data-operation>-</button>
+            <button data-number>.</button>
+            <button data-number>0</button>
+            <button data-equal id="equalBtn">=</button>
+            
         </div>
-
     </div>
+
+
+
     <script src="./js/script.js">
     </script>
 </body>
