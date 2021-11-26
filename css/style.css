@@ -12,26 +12,20 @@
 }
 
 body {
-    background: linear-gradient(to right, black, grey, black);
-}
-
-#container {
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
+    background: linear-gradient(to bottom, blue, rgb(137, 248, 165), green);
 }
 
 #brandTitle {
-    padding: 50px;
+    font-size: 35px;
+    color: white;
+    text-align: center;
 }
 
 #calculatorGrid {
     display: grid;
     font-weight: normal;
-    grid-template-columns: repeat(4, 100px);
-    grid-template-rows: minmax(120px, auto) repeat(5, 100px);
+    grid-template-columns: repeat(4, 90px);
+    grid-template-rows: minmax(120px, auto) repeat(5, 90px);
     justify-content: center;
     align-content: center;
     height: 100vh;
@@ -69,11 +63,11 @@ body {
 }
 
 #calculatorGrid>button {
+    cursor: pointer;
     background-color: rgba(255, 255, 255, .75);
     border-radius: 5px;
-    border: 1px solid white;
+    /* border: 1px solid white; */
     outline: none;
-    font-size: larger;
     font-family: Archivo-Bold;
 }
 
