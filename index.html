@@ -12,16 +12,18 @@
 
 <body>
     <div id="container">
+
         <h1 id="brandTitle">Saylani Calculator </h1>
+        
         <div id="calculatorGrid">
             <div id="output">
-                <div data-previousOperand id="previousOperand">456</div>
-                <div data-currentOperand id="currentOperand">123</div>
+                <div data-previousOperand id="previousOperand">previous value</div>
+                <div data-currentOperand id="currentOperand">current value</div>
             </div>
             <button data-allClear id="allClear">AC</button>
             <button data-delete id="delete">DEL</button>
             <button data-operational>÷</button>
-            <button data-number>1</button>
+            <button data-number onclick="one()">1</button>
             <button data-number>2</button>
             <button data-number>3</button>
             <button data-operational>*</button>
@@ -37,6 +39,10 @@
             <button data-number>0</button>
             <button data-equals id="equal">=</button>
         </div>
+
+    
+        
+
 
     </div>
     <script src="./js/script.js"></script>
